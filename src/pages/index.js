@@ -21,7 +21,7 @@ const features = [
     imageUrl: 'img/databases.svg',
     description: (
       <>
-        The Flywheel SDK includes resources for programmatically accessing large amounts of data.
+        Our SDK includes resources for programmatically accessing large amounts of data.
       </>
     ),
   },
@@ -39,14 +39,14 @@ const features = [
 function Feature({imageUrl, title, description}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className={clsx('col col--4', styles.feature)}>
-      {imgUrl && (
-        <div className="text--center">
+    <div className={clsx('col col--4', styles.feature, styles.featureBox)}>
+      <div className={styles.featureBoxContainer}>
+        {imgUrl && (
           <img className={styles.featureImage} src={imgUrl} alt={title} />
-        </div>
-      )}
-      <h3>{title}</h3>
-      <p>{description}</p>
+        )}
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
     </div>
   );
 }
