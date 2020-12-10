@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Flywheel Developer Docs',
-  tagline: 'Resources for interacting with the Flywheel SDK,',
+  tagline: 'Resources for interacting with the Flywheel SDK',
   url: 'https://emilytrudeau.gitlab.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -37,7 +37,7 @@ module.exports = {
         },
         {
         to: "/reference",
-        activeBasePath: "reference",
+        activeBasePath: "api",
         label: "API reference",
         position: "left",
         },
@@ -86,6 +86,19 @@ module.exports = {
           ],
         },
         {
+          title: 'Company',
+          items: [
+            {
+              label: 'Flywheel.io',
+              href: 'https://www.flywheel.io',
+            },
+            {
+              label: 'Contact Support',
+              href: 'https://docs.flywheel.io/hc/en-us/requests/new',
+            },
+          ],
+        },
+        {
           title: 'Community',
           items: [
             {
@@ -106,21 +119,8 @@ module.exports = {
             },
           ],
         },
-        {
-          title: 'Company',
-          items: [
-            {
-              label: 'Flywheel.io',
-              href: 'https://www.flywheel.io',
-            },
-            {
-              label: 'Contact Support',
-              href: 'https://docs.flywheel.io/hc/en-us/requests/new',
-            },
-          ],
-        },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Flywheel Exchange, LLC.`,
     },
   },
   presets: [
